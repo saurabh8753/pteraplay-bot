@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PteraPlay - Watch Online</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    video {
+      width: 90%;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+    .ad-section {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🎬 PteraPlay Video Player</h2>
+
+  <!-- 🔹 Ad Section -->
+  <div class="ad-section">
+    <script async="async" data-cfasync="false" src="//pl26875836.effectivegatecpm.com/f8008bd2b70198aec0cb214fe705a556/invoke.js"></script>
+    <div id="container-f8008bd2b70198aec0cb214fe705a556"></div>
+  </div>
+
+  <!-- 🔹 Video Player -->
+  <video id="player" controls autoplay></video>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const videoUrl = params.get('url');
+    if (videoUrl) {
+      document.getElementById('player').src = videoUrl;
+    } else {
+      document.body.innerHTML = "<h3>⚠️ Invalid or missing video URL</h3>";
+    }
+  </script>
+
+  <!-- 🔹 Footer Ad -->
+  <div class="ad-section">
+    <script async src="//pl26875836.effectivegatecpm.com/ads.js"></script>
+  </div>
+</body>
+</html>
